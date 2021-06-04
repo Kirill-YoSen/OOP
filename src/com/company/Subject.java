@@ -1,18 +1,30 @@
 package com.company;
 
 public class Subject {
-    public int Math;
-    public int Russian;
-    public int Social;
-    public int DisignAndTechnologies;
-    public int Literature;
-    private Tests test;
+    public int Math = 0;
+    public int Russian = 0;
+    public int Social = 0;
+    public int DisignAndTechnologies = 0;
+    public int Literature = 0;
+    public Tests test = new Tests();
 
-    public int setMath() {
-       return test.testMath();
+    public void setMath() {
+        this.Math = test.testMath();
     }
 
-    public int setRussian() {
-        return test.testRussian();
+    public void  setRussian() {
+        this.Russian = test.testRussian();
+    }
+
+    public void  setSocial() {
+        this.Social = test.testSocial();
+    }
+
+    public void setDisignAndTechnologies() {
+        this.DisignAndTechnologies = test.testDandT();
+    }
+
+    public void setLiterature() {
+        this.Literature = test.testLiterature();
     }
 }
